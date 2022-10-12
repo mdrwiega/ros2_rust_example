@@ -1,0 +1,26 @@
+[package]
+name = "rust_example"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = {version = "*"}
+
+[dependencies.rclrs]
+version = "*"
+
+[dependencies.std_msgs]
+version = "*"
+
+[[bin]]
+name = "publisher"
+path = "src/publisher.rs"
+
+[[bin]]
+name = "subscriber"
+path = "src/subscriber.rs"
+
+[package.metadata.ros]
+install_to_share = ["launch"]

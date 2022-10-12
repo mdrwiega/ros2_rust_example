@@ -1,0 +1,10 @@
+launch:
+
+- node:
+    pkg: 'rust_example'
+    exec: 'publisher'
+    output: 'screen'
+- node:
+    pkg: 'rust_example'
+    exec: 'subscriber'
+    output: 'screen'

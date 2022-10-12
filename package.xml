@@ -1,0 +1,14 @@
+<package format="3">
+  <name>rust_example</name>
+  <version>0.0.0</version>
+  <description>Example package</description>
+  <maintainer email="address@x.com">user</maintainer>
+  <license>License type</license>
+
+  <depend>rclrs</depend>
+  <depend>std_msgs</depend>
+
+  <export>
+    <build_type>ament_cargo</build_type>
+  </export>
+</package>
